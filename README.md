@@ -22,10 +22,8 @@ vercel.json       configuração da Vercel (cache e cabeçalhos)
    ```js
    whatsapp: "55DDDNUMERO",   // só dígitos, ex.: 5511912345678
    ```
-2. Depois que a Vercel der o endereço do site, troque em `index.html` a linha
-   `<meta property="og:image" content="assets/og-image.jpg">`
-   pelo endereço completo, por exemplo `https://zetta.vercel.app/assets/og-image.jpg`,
-   para a prévia aparecer certinha ao compartilhar o link no WhatsApp.
+2. O site está publicado em https://zetta-woad.vercel.app. Se trocar o endereço (domínio próprio), atualize a linha
+   `og:image` em `index.html` com o novo endereço.
 
 ## Ver no computador
 
