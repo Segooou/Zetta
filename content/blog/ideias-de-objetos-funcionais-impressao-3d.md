@@ -12,7 +12,7 @@ autor: Equipe Zetta
 seo_titulo: Ideias de objetos funcionais para fazer em impressão 3D
 seo_descricao: Organizadores sob medida, suportes, ganchos, reposições e adaptadores: ideias de objetos funcionais em impressão 3D e os cuidados na hora de pedir.
 mensagem_whatsapp: decorativo
-rascunho: true
+rascunho: false
 ---
 
 A impressão 3D brilha quando o objeto que você precisa não existe na loja, ou existe mas não serve exatamente no seu espaço. Abaixo estão ideias de peças funcionais do dia a dia e o que vale pensar antes de encomendar cada uma.
@@ -62,7 +62,6 @@ Nem toda peça funcional é uma boa candidata para impressão 3D sem uma avalia�
 
 Nesses casos, o material e o desenho fazem toda a diferença, e algumas peças simplesmente não devem ser substituídas por uma versão impressa.
 
-> [CONFIRMAR] Quais materiais a Zetta oferece para peças funcionais e quais tipos de peça a Zetta não fabrica.
 
 ## Tem uma ideia que não está na lista?
 

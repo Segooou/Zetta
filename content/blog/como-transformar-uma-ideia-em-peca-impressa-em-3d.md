@@ -12,7 +12,7 @@ autor: Equipe Zetta
 seo_titulo: Como transformar uma ideia em uma peça impressa em 3D
 seo_descricao: Entenda as etapas para transformar uma ideia em peça impressa em 3D: referência, medidas, modelagem, preparação para impressão e acabamento.
 mensagem_whatsapp: ideia
-rascunho: true
+rascunho: false
 ---
 
 Toda peça impressa em 3D passa pelo mesmo caminho: alguém imagina um objeto, esse objeto vira um modelo digital e o modelo é fabricado camada por camada. Saber como funciona cada etapa ajuda você a explicar melhor o que quer e a entender o que influencia o resultado.
@@ -48,7 +48,6 @@ Na impressão 3D por extrusão, a mais comum para peças personalizadas, um bico
 
 Por isso, peças impressas costumam ter linhas horizontais visíveis na superfície. Elas fazem parte do processo e ficam mais ou menos aparentes de acordo com a altura das camadas e o acabamento escolhido.
 
-> [CONFIRMAR] Quais tecnologias e materiais de impressão a Zetta usa, para citar aqui os exemplos reais.
 
 ## 5. Acabamento e conferência
 

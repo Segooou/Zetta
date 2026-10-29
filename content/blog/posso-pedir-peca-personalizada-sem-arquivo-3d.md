@@ -12,7 +12,7 @@ autor: Equipe Zetta
 seo_titulo: Peça personalizada em 3D sem ter arquivo 3D? Veja como pedir
 seo_descricao: Não tem arquivo 3D? Veja como pedir uma peça personalizada com fotos, medidas ou um desenho, e quais formatos de arquivo ajudam quando você já tem um.
 mensagem_whatsapp: ideia
-rascunho: true
+rascunho: false
 ---
 
 Sim. A maioria das pessoas que pede uma peça personalizada não tem um arquivo 3D, e isso não impede o pedido. O arquivo é criado na etapa de modelagem, a partir do que você enviar. O que muda é o tipo de informação que ajuda a acertar a peça de primeira.
@@ -54,7 +54,6 @@ Se você tem ou encontrou um modelo pronto, mande junto. Os formatos mais comuns
 
 Mesmo com arquivo, a peça pode precisar de ajustes para ser impressa, como engrossar paredes finas ou mudar a orientação.
 
-> [CONFIRMAR] Quais formatos de arquivo a Zetta aceita e se a modelagem a partir de referências tem custo separado no orçamento.
 
 ## O que acontece depois
 

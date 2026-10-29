@@ -47,5 +47,18 @@
         }
       ]
     }
+  ],
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "zetta-woad.vercel.app"
+        }
+      ],
+      "destination": "https://zetta3d.vercel.app/:path*",
+      "permanent": true
+    }
   ]
 }

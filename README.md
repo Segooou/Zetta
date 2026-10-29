@@ -4,7 +4,7 @@ Landing page e blog da **Zetta**, impressão 3D e peças personalizadas. *Ideias
 
 Site estático (HTML, CSS e JavaScript). O blog é gerado a partir de arquivos Markdown por um script em Node **sem dependências**: não há banco de dados, painel administrativo nem pacotes para instalar.
 
-Endereço atual: https://zetta-woad.vercel.app
+Endereço oficial: https://zetta3d.vercel.app (o endereço antigo zetta-woad.vercel.app redireciona para ele)
 
 ## Estrutura
 
@@ -101,7 +101,7 @@ Para revisar no computador: `node scripts/build.mjs --rascunhos` e abra `dist/` 
 
 O site não é indexado automaticamente por estar no ar. Para pedir a indexação:
 
-1. Entre em https://search.google.com/search-console e adicione uma propriedade do tipo **Prefixo do URL** com o endereço do site (hoje `https://zetta-woad.vercel.app`).
+1. Entre em https://search.google.com/search-console e adicione uma propriedade do tipo **Prefixo do URL** com o endereço do site (hoje `https://zetta3d.vercel.app`).
 2. Verifique a propriedade pelo método **Tag HTML**: copie a meta tag que o Google mostrar e cole no `<head>` de `index.html`, logo abaixo do `<title>`. Envie para o GitHub, espere o deploy e clique em **Verificar**. (Com domínio próprio, prefira a propriedade de **Domínio**, verificada por um registro DNS.)
 3. Em **Sitemaps**, envie `sitemap.xml`.
 4. Em **Inspeção de URL**, teste a página inicial e peça a indexação. Repita para cada artigo novo, se quiser acelerar.

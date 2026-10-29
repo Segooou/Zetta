@@ -12,7 +12,7 @@ autor: Equipe Zetta
 seo_titulo: Como funciona um projeto sob medida em impressão 3D
 seo_descricao: Entenda as etapas de um projeto sob medida em impressão 3D: briefing, avaliação, modelagem, aprovação, teste de encaixe, produção e entrega.
 mensagem_whatsapp: ideia
-rascunho: true
+rascunho: false
 ---
 
 Um projeto sob medida é diferente de escolher um produto pronto: a peça ainda não existe e vai ser desenhada para resolver uma necessidade específica. Por isso ele passa por algumas etapas a mais. Saber quais são ajuda você a planejar o tempo e a tomar as decisões certas em cada momento.
@@ -47,7 +47,6 @@ Com o orçamento aprovado, a peça é desenhada em um programa de modelagem 3D. 
 
 Antes da produção final, é comum conferir o desenho com você. Em peças com encaixe, pode valer imprimir uma **versão de teste** para verificar as medidas no lugar real. Se algo não encaixar, o modelo é ajustado antes de seguir.
 
-> [CONFIRMAR] Como a Zetta faz a aprovação do modelo (imagens, prévia em 3D ou peça de teste) e quantas rodadas de ajuste estão incluídas no orçamento.
 
 ## 5. Produção
 
@@ -57,7 +56,6 @@ Com o modelo aprovado, a peça é preparada para a impressão e impressa camada 
 
 A peça segue para a entrega nas condições combinadas no orçamento.
 
-> [CONFIRMAR] Formas de entrega ou retirada, regiões atendidas e como os prazos são informados.
 
 ## Como acelerar o seu projeto
 

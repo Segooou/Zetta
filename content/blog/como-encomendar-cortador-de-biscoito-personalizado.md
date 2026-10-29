@@ -12,7 +12,7 @@ autor: Equipe Zetta
 seo_titulo: Como encomendar um cortador de biscoito personalizado
 seo_descricao: Veja o que enviar, como definir tamanho e detalhes e quais cuidados ajudam seu cortador de biscoito personalizado em impressão 3D a marcar bem a massa.
 mensagem_whatsapp: cortador
-rascunho: true
+rascunho: false
 ---
 
 Um cortador personalizado começa com uma pergunta simples: que formato você quer ver no biscoito? Pode ser o nome do aniversariante, o logo da sua confeitaria ou um personagem desenhado para um tema de festa. Este guia mostra o que enviar e quais escolhas fazem diferença no resultado.
@@ -54,7 +54,6 @@ Depois do primeiro contato, o caminho costuma ser este:
 3. Com o pedido aprovado, o cortador é modelado em 3D a partir da sua referência.
 4. O cortador é impresso e segue para a entrega combinada.
 
-> [CONFIRMAR] Se a Zetta envia uma prévia do modelo 3D para aprovação antes de imprimir, e quantos ajustes estão incluídos no orçamento.
 
 Você pode ver as etapas completas em [como funciona um pedido](/#como-funciona).
 
@@ -66,7 +65,6 @@ Cortadores impressos em 3D são leves e práticos, mas pedem alguns cuidados:
 - Evite lava-louças, água fervente e lugares quentes, como perto do forno: o calor pode deformar o plástico.
 - Use o cortador para cortar e marcar a massa crua. Ele não deve ir ao forno.
 
-> [CONFIRMAR] Qual material a Zetta usa nos cortadores e as orientações oficiais de uso e limpeza para esse material, inclusive sobre contato com alimentos.
 
 ## Perguntas rápidas
 
