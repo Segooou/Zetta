@@ -98,9 +98,8 @@ a{color:inherit}
 
 .plate{position:relative;margin:0;width:100%;background:var(--branco);border:1px solid var(--linha);border-radius:var(--r-media);aspect-ratio:1/1.02;max-width:100%;overflow:hidden;
   background-image:repeating-linear-gradient(0deg, transparent 0 5px, color-mix(in srgb, var(--lavanda) 16%, transparent) 5px 6px)}
-.plate svg{position:absolute;inset:6% 6% 12%;width:88%;height:82%}
-.plate figcaption{position:absolute;left:1rem;right:1rem;bottom:.85rem;font-size:.8rem;color:var(--cinza);display:flex;justify-content:space-between;gap:1rem}
-.plate figcaption b{font-weight:600;color:var(--tinta)}
+.plate svg{position:absolute;inset:5% 6% 14%;width:88%;height:81%}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
 
 /* Seções */
 .sec{padding-block:var(--sec)}
@@ -160,13 +159,10 @@ a{color:inherit}
 .about .text p:first-child{font-size:var(--t-md);color:var(--grafite)}
 
 /* CTA final */
-.final{padding-block:calc(var(--sec) + 40px) var(--sec)}
-.final-box{position:relative;background:var(--grafite);color:var(--branco);border-radius:var(--r-media);padding:clamp(3rem,7vw,5.5rem) clamp(1.5rem,6vw,5rem) clamp(2.5rem,6vw,4.5rem);display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);gap:2rem;align-items:end}
-.peek{height:auto;position:absolute;right:clamp(1.5rem,8vw,7rem);bottom:calc(100% - 22px);width:clamp(130px,17vw,200px);pointer-events:none}
+.final{padding-block:var(--sec)}
+.final-box{position:relative;background:var(--grafite);color:var(--branco);border-radius:var(--r-media);padding:clamp(2.5rem,6vw,4.5rem) clamp(1.5rem,6vw,5rem);display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:2rem 3rem;align-items:center}
 .final h2{color:var(--branco);font-size:clamp(2.1rem,5.2vw,3.75rem);letter-spacing:-.03em}
 .final p{color:#DCD8E6;margin-top:1.25rem;max-width:40ch;font-size:var(--t-md)}
-.final .act{display:flex;flex-direction:column;align-items:flex-start;gap:.8rem}
-.final .act small{color:var(--cinza-escuro);font-size:var(--t-sm)}
 
 /* Footer */
 .footer{padding-block:3rem calc(3rem + env(safe-area-inset-bottom,0px));border-top:1px solid var(--linha)}
@@ -192,6 +188,30 @@ a{color:inherit}
 @media (max-width:700px){.config-note{bottom:calc(84px + env(safe-area-inset-bottom,0px))}}
 
 
+
+/* ================= MAVI (3 ilustrações) ================= */
+/* Cartão da ilustração "espiando": o retângulo branco da própria imagem recebe conteúdo.
+   Medidas do cartão dentro de mavi-hero.webp: topo 54%, largura 92.7%. */
+.sign{position:relative;margin:0}
+.sign img{display:block;width:100%;height:auto;object-fit:contain}
+.sign-card{position:absolute;left:0;top:54%;bottom:0;width:92.7%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.55rem;text-align:center;padding:6% 9% 5%}
+
+.hero-visual{position:relative;padding-bottom:clamp(3.5rem,6vw,4.5rem)}
+.sign-hero{position:absolute;right:clamp(-2.5rem,-2vw,-.5rem);bottom:0;width:clamp(170px,16vw,215px);z-index:2}
+.sign-hero .sign-card p{font-size:.78rem;line-height:1.25;font-weight:600;color:var(--tinta);max-width:20ch}
+.sign-hero .replay{font-size:.72rem;padding:.38rem .6rem;white-space:nowrap}
+
+.custom-art{margin:0 0 1.75rem;max-width:400px}
+.custom-art img{display:block;width:100%;height:auto;object-fit:contain}
+
+.process-art{margin:calc(clamp(2.5rem,5vw,4rem) * -.5) 0 clamp(2.5rem,5vw,3.5rem) auto;max-width:640px}
+.process-art img{display:block;width:100%;height:auto;object-fit:contain}
+
+.sign-final{justify-self:end;width:min(330px,100%)}
+.sign-final .sign-card{gap:.6rem;padding:12% 7% 4%}
+.sign-final .btn{font-size:.95rem;padding:.8rem 1rem;justify-content:center}
+.sign-final small{color:var(--cinza);font-size:.8rem}
+
 /* ================= MOVIMENTO ================= */
 /* Barra de progresso de leitura: a página "imprimindo" enquanto rola */
 .progress{position:absolute;left:0;right:0;bottom:-1px;height:3px;pointer-events:none}
@@ -211,7 +231,6 @@ a{color:inherit}
 .replay:hover{background:var(--lavanda-clara);border-color:var(--lavanda)}
 .replay svg{position:static;width:14px;height:14px;transition:transform .5s var(--ease-out)}
 .replay:hover svg{transform:rotate(-200deg)}
-.plate figcaption{align-items:center}
 
 /* Revelação no scroll (só para o que começa fora da tela) */
 [data-reveal]{transition:opacity .8s var(--ease-out),transform .8s var(--ease-out);transition-delay:var(--d,0ms)}
@@ -270,10 +289,16 @@ a{color:inherit}
 @keyframes wave{20%{transform:rotate(-6deg)}45%{transform:rotate(5deg)}70%{transform:rotate(-3deg)}100%{transform:rotate(0)}}
 
 /* Mavi espia no fechamento: sobe por trás da borda e apoia as patas */
-.peek{transition:transform 1s var(--ease-spring)}
-.peek.hide{transform:translateY(96%);z-index:-1}
-.peek.ledge{z-index:1}
-.final-box:hover .peek.ledge{transform:translateY(-10px)}
+
+
+/* Mavi: entradas */
+.sign-hero{animation:mavIn 1s var(--ease-spring) .95s both}
+@keyframes mavIn{from{opacity:0;transform:translateY(36px)}}
+.sign-hero img,.sign-final img,.custom-art img,.mavi img{transition:transform .5s var(--ease-out)}
+.sign-hero:hover img,.final-box:hover .sign-final img{transform:translateY(-4px)}
+.custom-art:hover img{transform:translateY(-4px) rotate(-1deg)}
+[data-reveal="wipe"]{transition:clip-path 1.3s var(--ease-out);transition-delay:var(--d,0ms);clip-path:inset(-6% -6% -6% -6%)}
+[data-reveal="wipe"].pre{opacity:1;transform:none;clip-path:inset(-6% 100% -6% -6%)}
 
 /* Menu mobile abrindo */
 @media (max-width:860px){
@@ -293,6 +318,12 @@ a{color:inherit}
   .plate{max-width:460px;width:100%}
   .sec-head{grid-template-columns:minmax(0,1fr)}
   .final-box{grid-template-columns:minmax(0,1fr)}
+  .sign-final{justify-self:center}
+  .hero-visual{max-width:460px;width:100%}
+  .sign-hero{right:-6px;width:190px}
+  .sign-hero .sign-card p{font-size:.74rem}
+  .custom-art{max-width:320px}
+  .process-art{margin:0 0 2.5rem}
   .mavi{max-width:240px;order:-1;justify-self:start}
 }
 @media (max-width:620px){
@@ -301,7 +332,6 @@ a{color:inherit}
   .product-media{max-width:340px}
   .steps{grid-template-columns:minmax(0,1fr)}
   .hero .actions .btn,.custom .btn{width:100%;justify-content:center}
-  .peek{right:1.25rem}
 }
 /* Movimento reduzido: mantém as aparições suaves e a impressão em camadas,
    corta deslocamentos, inclinações, balanços e efeitos magnéticos */
@@ -316,8 +346,9 @@ a{color:inherit}
   @keyframes fadeOnly{from{opacity:0}}
   .product:hover .product-media,.product:hover .swing,.product:hover .product-media,
   .brand:hover img,.mavi.wave img,.btn:hover svg{animation:none;transform:none}
-  .peek{transition:opacity .6s ease}
-  .peek.hide{transform:none;opacity:0}
   .step:hover .stack i{transform:none}
+  .sign-hero{animation:fadeOnly .8s ease .4s both}
+  [data-reveal="wipe"]{transition:clip-path .8s ease}
+  .sign-hero:hover img,.final-box:hover .sign-final img,.custom-art:hover img{transform:none}
   .btn:active{transform:none}
 }

@@ -6,12 +6,14 @@
 window.ZETTA = {
   whatsapp: "", // ← PREENCHER com o número real da Zetta
   mensagens: {
-    orcamento:  "Olá, Zetta! Gostaria de pedir um orçamento.",
-    cortador:   "Olá, Zetta! Quero orçar um cortador de biscoito personalizado.",
-    chaveiro:   "Olá, Zetta! Quero orçar chaveiros personalizados.",
-    decorativo: "Olá, Zetta! Quero orçar uma peça decorativa ou funcional.",
-    ideia:      "Olá, Zetta! Tenho uma ideia de peça sob medida e queria conversar.",
-    conversa:   "Olá, Zetta! Vim pelo site e queria conversar."
+    hero:       "Olá! Quero conhecer os produtos da Zetta.",
+    orcamento:  "Olá! Gostaria de pedir um orçamento.",
+    cortador:   "Olá! Quero orçar um cortador de biscoito personalizado.",
+    chaveiro:   "Olá! Quero orçar chaveiros personalizados.",
+    decorativo: "Olá! Quero orçar uma peça decorativa ou funcional.",
+    ideia:      "Olá! Quero desenvolver uma peça personalizada.",
+    final:      "Olá! Tenho uma ideia e gostaria de pedir um orçamento.",
+    conversa:   "Olá! Vim pelo site da Zetta e queria conversar."
   }
 };
 /* ========================================================= */

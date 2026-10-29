@@ -52,7 +52,7 @@
         <h1 id="hero-title"><span class="l"><span>Ideias que</span></span> <span class="l"><span style="--d:1">ganham forma.</span></span></h1>
         <p class="lead">A Zetta modela e imprime em 3D o que você imaginou: cortadores de biscoito personalizados, chaveiros, peças decorativas e projetos sob medida.</p>
         <div class="actions">
-          <a class="btn btn-primary" data-wa="orcamento" href="#contato">
+          <a class="btn btn-primary" data-wa="hero" href="#contato">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 18.5V6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v7a2.5 2.5 0 0 1-2.5 2.5H8.5L4 20.5z"/><path d="M8.5 9h7M8.5 12h4.5"/></svg>
             Pedir orçamento pelo WhatsApp
           </a>
@@ -61,6 +61,7 @@
         <p class="note">Mande um desenho, uma foto de referência ou só a ideia. A gente conversa sobre os detalhes e passa o orçamento.</p>
       </div>
 
+      <div class="hero-visual">
       <figure class="plate" aria-label="Ilustração de um cortador de biscoito no formato da cabeça de um gato sendo impresso camada por camada">
         <svg viewBox="0 0 420 380" aria-hidden="true">
           <defs>
@@ -80,8 +81,17 @@
             <circle cy="-6" r="3" fill="#B9A2EC"/>
           </g>
         </svg>
-        <figcaption><span>Ilustração: <b>cortador formato Mavi</b></span><button class="replay" type="button" id="replay"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 8a5.5 5.5 0 1 0 1.6-3.9"/><path d="M2.5 2.5v3h3"/></svg>Imprimir de novo</button></figcaption>
+        <figcaption class="sr-only">Ilustração do cortador com o formato da cabeça da Mavi.</figcaption>
       </figure>
+      <!-- Mavi espiando por trás do cartão: o cartão da própria ilustração vira a legenda -->
+      <div class="sign sign-hero">
+        <img src="assets/mavi/mavi-hero.webp" width="560" height="618" alt="Mavi, a gata preta mascote da Zetta, espiando por trás de um cartão." fetchpriority="high" decoding="async">
+        <div class="sign-card">
+          <p>Este cortador tem o formato da Mavi.</p>
+          <button class="replay" type="button" id="replay"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 8a5.5 5.5 0 1 0 1.6-3.9"/><path d="M2.5 2.5v3h3"/></svg>Imprimir de novo</button>
+        </div>
+      </div>
+      </div>
     </div>
   </section>
 
@@ -204,6 +214,9 @@
         <p class="fine">Cada projeto é avaliado antes do orçamento. Tamanho, acabamento e viabilidade são combinados na conversa.</p>
       </div>
       <div class="send">
+        <figure class="custom-art" data-reveal="right">
+          <img src="assets/mavi/mavi-sob-medida.webp" width="720" height="661" loading="lazy" decoding="async" alt="Mavi analisando um desenho técnico de um cortador em formato de gato, com uma régua ao lado e a peça já impressa em 3D.">
+        </figure>
         <h3 data-reveal>Para começar, você pode mandar</h3>
         <ul>
           <li>
@@ -234,6 +247,9 @@
         <h2 id="how-title" data-reveal="print">Da primeira mensagem à peça pronta</h2>
         <p data-reveal style="--d:150ms">Um processo simples, combinado com você em cada etapa.</p>
       </div>
+      <figure class="process-art" data-reveal="wipe">
+        <img src="assets/mavi/mavi-processo.webp" width="1100" height="423" loading="lazy" decoding="async" alt="Mavi apontando para os quatro símbolos do processo: conversa, aprovação, modelagem da peça e entrega.">
+      </figure>
       <ol class="steps">
         <li class="step">
           <div class="stack" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></div>
@@ -268,7 +284,7 @@
   <section class="sec about" id="sobre" aria-labelledby="about-title">
     <div class="wrap">
       <figure class="mavi" data-reveal="pop">
-        <img src="assets/mavi-chef.webp" width="720" height="935" loading="lazy" alt="Mavi, a mascote da Zetta: uma gata preta de olhos lilás, com chapéu de chef, acenando.">
+        <img src="assets/mavi/mavi-acenando.webp" width="480" height="495" loading="lazy" decoding="async" alt="Mavi, a mascote da Zetta: uma gata preta de olhos lilás, acenando.">
         <figcaption>Esta é a Mavi, mascote da Zetta.</figcaption>
       </figure>
       <div>
@@ -286,17 +302,19 @@
   <section class="final" id="contato" aria-labelledby="final-title">
     <div class="wrap">
       <div class="final-box" data-reveal>
-        <img class="peek hide" src="assets/zetta-logo.webp" width="480" height="356" alt="" loading="lazy">
         <div>
           <h2 id="final-title">Sua próxima ideia pode começar aqui.</h2>
           <p>Conte o que você quer criar. O orçamento e todos os detalhes são combinados pelo WhatsApp.</p>
         </div>
-        <div class="act">
-          <a class="btn btn-lav" data-wa="conversa" href="#contato">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 18.5V6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v7a2.5 2.5 0 0 1-2.5 2.5H8.5L4 20.5z"/><path d="M8.5 9h7M8.5 12h4.5"/></svg>
-            Conversar pelo WhatsApp
-          </a>
-          <small data-wa-number></small>
+        <div class="sign sign-final" data-reveal="pop" style="--d:200ms">
+          <img src="assets/mavi/mavi-hero.webp" width="560" height="618" loading="lazy" decoding="async" alt="">
+          <div class="sign-card">
+            <a class="btn btn-primary" data-wa="final" href="#contato">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 18.5V6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v7a2.5 2.5 0 0 1-2.5 2.5H8.5L4 20.5z"/><path d="M8.5 9h7M8.5 12h4.5"/></svg>
+              Conversar pelo WhatsApp
+            </a>
+            <small data-wa-number></small>
+          </div>
         </div>
       </div>
     </div>

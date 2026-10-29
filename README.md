@@ -11,7 +11,8 @@ index.html        página
 css/style.css     estilos, cores e animações
 js/config.js      ← número do WhatsApp e mensagens (edite aqui)
 js/main.js        menu, animações e interações
-assets/           logo, mascote Mavi, favicon e imagem de compartilhamento
+assets/           logo, favicon e imagem de compartilhamento
+assets/mavi/      ilustrações da Mavi (hero, sob medida, processo e acenando)
 vercel.json       configuração da Vercel (cache e cabeçalhos)
 ```
 

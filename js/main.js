@@ -131,14 +131,6 @@
 
   /* Revelação no scroll */
   const onReveal = new Map();
-  const peek = document.querySelector(".peek");
-  const finalBox = document.querySelector(".final-box");
-  const showPeek = (wait) => setTimeout(() => {
-    peek.classList.remove("hide");
-    setTimeout(() => peek.classList.add("ledge"), 520);
-  }, wait || 0);
-  /* espera o bloco terminar de aparecer antes da Mavi subir por trás da borda */
-  onReveal.set(finalBox, () => showPeek(850));
   onReveal.set(document.querySelector(".product.is-featured"), () => heartPrint.play(250));
   /* no celular não existe hover: cada produto toca sua animação ao aparecer */
   document.querySelectorAll(".product:not(.is-featured)").forEach(pr => onReveal.set(pr, () => {
@@ -160,7 +152,7 @@
     document.querySelectorAll("[data-reveal]").forEach(el => {
       if (el.getBoundingClientRect().top > innerHeight * .9) {
         el.classList.add("pre");
-        const t = el.dataset.reveal === "print" ? el.parentElement : el;
+        const t = (el.dataset.reveal === "print" || el.dataset.reveal === "wipe") ? el.parentElement : el;
         if (!targets.has(t)) { targets.set(t, []); io.observe(t); }
         targets.get(t).push(el);
       } else { const fn = onReveal.get(el); if (fn) fn(); }
@@ -174,7 +166,7 @@
       });
     };
     addEventListener("scroll", () => { if (!sweepQueued && targets.size) { sweepQueued = true; setTimeout(sweep, 120); } }, {passive: true});
-  } else { showPeek(); }
+  }
 
   /* Coração reimprime ao passar o mouse */
   const featured = document.querySelector(".product.is-featured");
@@ -206,6 +198,8 @@
     navLinks.forEach(a => a.setAttribute("aria-current", a.getAttribute("href") === "#" + e.target.id ? "true" : "false"));
   }), {rootMargin: "-45% 0px -50% 0px"});
   ["produtos", "sob-medida", "como-funciona", "sobre", "contato"].forEach(id => secIO.observe(document.getElementById(id)));
+  /* no topo da página nenhum item do menu fica marcado */
+  new IntersectionObserver(([e]) => { if (e.isIntersecting) navLinks.forEach(a => a.setAttribute("aria-current", "false")); }, {rootMargin: "-45% 0px -50% 0px"}).observe(document.querySelector(".hero"));
 
   /* Menu mobile */
   const btn = document.querySelector(".menu-btn"), nav = document.getElementById("menu");
