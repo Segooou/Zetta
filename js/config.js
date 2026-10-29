@@ -13,7 +13,8 @@ window.ZETTA = {
     decorativo: "Olá! Quero orçar uma peça decorativa ou funcional.",
     ideia:      "Olá! Quero desenvolver uma peça personalizada.",
     final:      "Olá! Tenho uma ideia e gostaria de pedir um orçamento.",
-    conversa:   "Olá! Vim pelo site da Zetta e queria conversar."
+    conversa:   "Olá! Vim pelo site da Zetta e queria conversar.",
+    blog:       "Olá! Li um artigo no blog da Zetta e queria pedir um orçamento."
   }
 };
 /* ========================================================= */

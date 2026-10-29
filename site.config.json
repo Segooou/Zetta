@@ -1,0 +1,14 @@
+{
+  "siteUrl": "https://zetta-woad.vercel.app",
+  "siteName": "Zetta",
+  "locale": "pt_BR",
+  "lang": "pt-BR",
+  "editorial": "Equipe Zetta",
+  "defaultOgImage": "/assets/og-image.jpg",
+  "blog": {
+    "title": "Blog da Zetta | Impressão 3D personalizada na prática",
+    "description": "Guias da Zetta sobre cortadores de biscoito personalizados, impressão 3D e projetos sob medida: como encomendar, o que enviar e como funciona cada etapa.",
+    "heading": "Blog da Zetta",
+    "intro": "Guias práticos para quem quer encomendar uma peça personalizada: o que enviar, como funciona cada etapa e o que dá para fazer com impressão 3D."
+  }
+}
