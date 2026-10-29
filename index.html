@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Zetta Impressão 3D</title>
+<meta name="description" content="A Zetta modela e imprime em 3D cortadores de biscoito personalizados, chaveiros, peças decorativas e projetos sob medida. Peça seu orçamento pelo WhatsApp.">
+<meta property="og:title" content="Zetta — Ideias que ganham forma">
+<meta property="og:description" content="Cortadores personalizados, chaveiros, peças decorativas e projetos sob medida em impressão 3D.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/og-image.jpg">
+<meta property="og:locale" content="pt_BR">
+<meta name="theme-color" content="#F4F3F7">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600&family=Unbounded:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/config.js" defer></script>
+<script src="js/main.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="header" id="topo">
+  <div class="wrap">
+    <a class="brand" href="#topo" aria-label="Zetta, voltar ao início">
+      <img src="assets/zetta-logo.webp" width="480" height="356" alt="">
+      <span>Zetta</span>
+    </a>
+    <button class="menu-btn" type="button" aria-controls="menu" aria-expanded="false" aria-label="Abrir menu"><span></span></button>
+    <nav class="nav" id="menu" aria-label="Principal" data-open="false">
+      <ul>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#sob-medida">Sob medida</a></li>
+        <li><a href="#como-funciona">Como funciona</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+      </ul>
+      <a class="btn btn-primary" data-wa="orcamento" href="#contato">Pedir orçamento</a>
+    </nav>
+  </div>
+  <div class="progress" aria-hidden="true"><i></i></div>
+</header>
+
+<main id="conteudo">
+
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap">
+      <div>
+        <h1 id="hero-title"><span class="l"><span>Ideias que</span></span> <span class="l"><span style="--d:1">ganham forma.</span></span></h1>
+        <p class="lead">A Zetta modela e imprime em 3D o que você imaginou: cortadores de biscoito personalizados, chaveiros, peças decorativas e projetos sob medida.</p>
+        <div class="actions">
+          <a class="btn btn-primary" data-wa="orcamento" href="#contato">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 18.5V6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v7a2.5 2.5 0 0 1-2.5 2.5H8.5L4 20.5z"/><path d="M8.5 9h7M8.5 12h4.5"/></svg>
+            Pedir orçamento pelo WhatsApp
+          </a>
+          <a class="btn btn-ghost" href="#produtos">Ver o que fazemos</a>
+        </div>
+        <p class="note">Mande um desenho, uma foto de referência ou só a ideia. A gente conversa sobre os detalhes e passa o orçamento.</p>
+      </div>
+
+      <figure class="plate" aria-label="Ilustração de um cortador de biscoito no formato da cabeça de um gato sendo impresso camada por camada">
+        <svg viewBox="0 0 420 380" aria-hidden="true">
+          <defs>
+            <!-- silhueta da Mavi como cortador -->
+            <path id="cut" d="M78 300 C48 252 52 196 86 156 L74 58 Q76 44 90 51 L166 100 Q210 88 254 100 L330 51 Q344 44 346 58 L334 156 C368 196 372 252 342 300 C306 350 114 350 78 300 Z"/>
+          </defs>
+          <g fill="none" stroke-linejoin="round">
+            <!-- camadas: geradas no script abaixo -->
+            <g id="layers"></g>
+          </g>
+          <!-- bico da impressora, só aparece durante a animação -->
+          <g id="nozzle" opacity="0">
+            <path d="M-210 -58H210" stroke="#A7A2B3" stroke-width="2"/>
+            <rect x="-30" y="-64" width="60" height="12" rx="3" fill="#5D5967"/>
+            <rect x="-16" y="-52" width="32" height="30" rx="4" fill="#1E1C24"/>
+            <path d="M-8 -22h16l-8 12z" fill="#1E1C24"/>
+            <circle cy="-6" r="3" fill="#B9A2EC"/>
+          </g>
+        </svg>
+        <figcaption><span>Ilustração: <b>cortador formato Mavi</b></span><button class="replay" type="button" id="replay"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 8a5.5 5.5 0 1 0 1.6-3.9"/><path d="M2.5 2.5v3h3"/></svg>Imprimir de novo</button></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- PRODUTOS -->
+  <section class="sec" id="produtos" aria-labelledby="produtos-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="produtos-title" data-reveal="print">O que dá para encomendar</h2>
+        <p data-reveal style="--d:150ms">Escolha um dos tipos de peça abaixo ou junte tudo numa ideia nova. Cada pedido é feito para você, a partir da sua referência.</p>
+      </div>
+
+      <ul class="products">
+        <!-- Para usar fotos reais: troque o <svg> de cada .product-media por
+             <img src="assets/sua-foto.webp" alt="descrição da peça" loading="lazy" width="800" height="600">
+             e remova o <figcaption>Ilustração</figcaption>. -->
+        <li class="product is-featured" data-reveal>
+          <figure class="product-media">
+            <svg viewBox="0 0 160 120" aria-hidden="true" fill="none" stroke-linejoin="round">
+              <g id="heart-layers"></g>
+            </svg>
+            <figcaption>Ilustração</figcaption>
+          </figure>
+          <div>
+            <h3>Cortadores de biscoito personalizados</h3>
+            <p class="desc">Para confeiteiros que querem sair dos formatos de prateleira. O cortador nasce do desenho que você precisa: o nome do aniversariante, o logo da sua confeitaria ou um tema de festa.</p>
+          </div>
+          <div class="side">
+            <div>
+              <p class="label">Pedidos comuns</p>
+              <ul class="ideas"><li>Letras e números</li><li>Logo da marca</li><li>Temas de festa</li><li>Kits por evento</li></ul>
+            </div>
+            <a class="link" data-wa="cortador" href="#contato">Orçar um cortador</a>
+          </div>
+        </li>
+
+        <li class="product" data-reveal>
+          <figure class="product-media">
+            <svg viewBox="0 0 160 120" aria-hidden="true" fill="none" stroke="#1E1C24" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round">
+              <circle cx="46" cy="38" r="15"/>
+              <g class="swing">
+                <rect x="56" y="34" width="72" height="54" rx="10" fill="#FFFFFF" transform="rotate(-8 92 61)"/>
+                <circle cx="66" cy="50" r="5" transform="rotate(-8 92 61)"/>
+                <path d="M84 52h28L86 76h28" stroke="#6646AD" stroke-width="4" transform="rotate(-8 92 61)"/>
+              </g>
+            </svg>
+            <figcaption>Ilustração</figcaption>
+          </figure>
+          <div>
+            <h3>Chaveiros e itens personalizados</h3>
+            <p class="desc">Chaveiros com nome, logo ou desenho, para presentear, marcar uma data ou levar a sua marca junto das chaves de alguém.</p>
+          </div>
+          <div class="side">
+            <div>
+              <p class="label">Pedidos comuns</p>
+              <ul class="ideas"><li>Lembrancinhas</li><li>Brindes de empresa</li><li>Presentes com nome</li></ul>
+            </div>
+            <a class="link" data-wa="chaveiro" href="#contato">Orçar chaveiros</a>
+          </div>
+        </li>
+
+        <li class="product" data-reveal>
+          <figure class="product-media">
+            <svg viewBox="0 0 160 120" aria-hidden="true" fill="none" stroke="#1E1C24" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round">
+              <path d="M62 18h36c0 14 14 20 14 46 0 22-10 38-32 38S48 86 48 64c0-26 14-32 14-46z" fill="#FFFFFF"/>
+              <g class="vl" stroke="#B9A2EC" stroke-width="1.5"><path pathLength="1" style="--k:4" d="M55 40h50"/><path pathLength="1" style="--k:3" d="M51 52h58"/><path pathLength="1" style="--k:2" d="M49 64h62"/><path pathLength="1" style="--k:1" d="M50 76h60"/><path pathLength="1" style="--k:0" d="M54 88h52"/></g>
+              <path d="M58 18h44"/>
+              <path d="M30 102h100"/>
+            </svg>
+            <figcaption>Ilustração</figcaption>
+          </figure>
+          <div>
+            <h3>Peças decorativas e objetos funcionais</h3>
+            <p class="desc">Vasos, suportes, organizadores e objetos para casa ou escritório, pensados para o espaço e o uso que você tem em mente.</p>
+          </div>
+          <div class="side">
+            <div>
+              <p class="label">Pedidos comuns</p>
+              <ul class="ideas"><li>Vasos e cachepôs</li><li>Suportes</li><li>Organizadores</li></ul>
+            </div>
+            <a class="link" data-wa="decorativo" href="#contato">Orçar uma peça</a>
+          </div>
+        </li>
+
+        <li class="product" data-reveal>
+          <figure class="product-media">
+            <svg viewBox="0 0 160 120" aria-hidden="true" fill="none" stroke="#1E1C24" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round">
+              <path d="M40 30h18v44h56v18H40z" fill="#FFFFFF"/>
+              <circle cx="49" cy="44" r="4"/><circle cx="96" cy="83" r="4"/>
+              <g class="dim" stroke="#6646AD" stroke-width="1.6"><path d="M40 104h74M40 100v8M114 100v8"/></g><g stroke="#6646AD" stroke-width="1.6"><path d="M128 74v18M124 74h8M124 92h8"/></g>
+              <text x="77" y="117" font-size="9" font-family="Onest, sans-serif" fill="#6646AD" stroke="none" text-anchor="middle">74 mm</text>
+            </svg>
+            <figcaption>Ilustração</figcaption>
+          </figure>
+          <div>
+            <h3>Projetos sob medida</h3>
+            <p class="desc">Peças que ainda não existem: uma reposição que precisa encaixar, um protótipo, um objeto criado do zero a partir das suas medidas.</p>
+          </div>
+          <div class="side">
+            <div>
+              <p class="label">Inclui</p>
+              <ul class="ideas"><li>Modelagem 3D</li><li>Peças de reposição</li><li>Protótipos</li></ul>
+            </div>
+            <a class="link" href="#sob-medida">Como funciona o sob medida</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SOB MEDIDA -->
+  <section class="sec custom" id="sob-medida" aria-labelledby="custom-title">
+    <div class="wrap">
+      <div>
+        <h2 id="custom-title" data-reveal="print">Tem uma ideia? Vamos dar forma a ela.</h2>
+        <p class="intro" data-reveal style="--d:150ms">Se o que você precisa não está em nenhuma prateleira, a Zetta pode modelar a peça em 3D e fabricá-la. Pode ser decorativa, funcional, um protótipo ou algo que precisa encaixar em outra peça.</p>
+        <a class="btn btn-lav" data-reveal style="--d:250ms" data-wa="ideia" href="#contato">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 18.5V6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v7a2.5 2.5 0 0 1-2.5 2.5H8.5L4 20.5z"/><path d="M8.5 9h7M8.5 12h4.5"/></svg>
+          Enviar minha ideia pelo WhatsApp
+        </a>
+        <p class="fine">Cada projeto é avaliado antes do orçamento. Tamanho, acabamento e viabilidade são combinados na conversa.</p>
+      </div>
+      <div class="send">
+        <h3 data-reveal>Para começar, você pode mandar</h3>
+        <ul>
+          <li>
+            <svg viewBox="0 0 44 44" fill="none" stroke="#B9A2EC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="6" width="28" height="32" rx="2"/><path d="M14 28c4-8 8 2 12-6 2-4 4-2 4 0"/></svg>
+            <span>Um rascunho no papel ou um desenho digital</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 44 44" fill="none" stroke="#B9A2EC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="11" width="32" height="24" rx="3"/><circle cx="22" cy="23" r="6"/><path d="M15 11l2-4h10l2 4"/></svg>
+            <span>Fotos de referência do que você quer</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 44 44" fill="none" stroke="#B9A2EC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14h12v8h12v10H10z"/><circle cx="16" cy="20" r="2"/><path d="M6 38h32"/></svg>
+            <span>Uma peça parecida, quebrada ou que precisa de reposição</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 44 44" fill="none" stroke="#B9A2EC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="16" width="34" height="12" rx="1"/><path d="M11 16v5M17 16v3M23 16v5M29 16v3M35 16v5"/></svg>
+            <span>As medidas do lugar onde a peça vai ficar</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section class="sec" id="como-funciona" aria-labelledby="how-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="how-title" data-reveal="print">Da primeira mensagem à peça pronta</h2>
+        <p data-reveal style="--d:150ms">Um processo simples, combinado com você em cada etapa.</p>
+      </div>
+      <ol class="steps">
+        <li class="step">
+          <div class="stack" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></div>
+          <span class="n">1</span>
+          <h3>Você conta a ideia</h3>
+          <p>Mande pelo WhatsApp o que tem em mente ou escolha um dos tipos de produto.</p>
+        </li>
+        <li class="step">
+          <div class="stack" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i></div>
+          <span class="n">2</span>
+          <h3>A Zetta avalia e orça</h3>
+          <p>Conversamos sobre detalhes, tamanho e quantidade, e você recebe o orçamento.</p>
+        </li>
+        <li class="step">
+          <div class="stack" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></div>
+          <span class="n">3</span>
+          <h3>Modelagem e preparo</h3>
+          <p>Com o pedido aprovado, a peça é modelada em 3D ou preparada para a impressão.</p>
+        </li>
+        <li class="step">
+          <div class="stack" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div>
+          <span class="n">4</span>
+          <h3>Produção e entrega</h3>
+          <p>A peça é impressa e segue para a entrega, nas condições combinadas com você.</p>
+        </li>
+      </ol>
+      <p class="steps-note" data-reveal style="--d:500ms">Prazos, materiais e forma de entrega dependem de cada pedido e são definidos junto com o orçamento.</p>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="sec about" id="sobre" aria-labelledby="about-title">
+    <div class="wrap">
+      <figure class="mavi" data-reveal="pop">
+        <img src="assets/mavi-chef.webp" width="720" height="935" loading="lazy" alt="Mavi, a mascote da Zetta: uma gata preta de olhos lilás, com chapéu de chef, acenando.">
+        <figcaption>Esta é a Mavi, mascote da Zetta.</figcaption>
+      </figure>
+      <div>
+        <h2 id="about-title" data-reveal="print">Sobre a Zetta</h2>
+        <div class="text" data-reveal style="--d:200ms">
+          <p>A Zetta começou pelos cortadores de biscoito para confeiteiros e hoje cria todo tipo de peça personalizada com modelagem e impressão 3D.</p>
+          <p>O que move o trabalho é ver uma ideia sair do papel e virar algo que dá para segurar na mão. Por isso cada pedido recebe atenção aos detalhes que fazem diferença no uso: a medida certa, o encaixe, o acabamento.</p>
+          <p>Se você tem uma ideia, mesmo que ainda esteja só na cabeça, vale a conversa.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="final" id="contato" aria-labelledby="final-title">
+    <div class="wrap">
+      <div class="final-box" data-reveal>
+        <img class="peek hide" src="assets/zetta-logo.webp" width="480" height="356" alt="" loading="lazy">
+        <div>
+          <h2 id="final-title">Sua próxima ideia pode começar aqui.</h2>
+          <p>Conte o que você quer criar. O orçamento e todos os detalhes são combinados pelo WhatsApp.</p>
+        </div>
+        <div class="act">
+          <a class="btn btn-lav" data-wa="conversa" href="#contato">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 18.5V6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v7a2.5 2.5 0 0 1-2.5 2.5H8.5L4 20.5z"/><path d="M8.5 9h7M8.5 12h4.5"/></svg>
+            Conversar pelo WhatsApp
+          </a>
+          <small data-wa-number></small>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div>
+      <a class="brand" href="#topo" aria-label="Zetta, voltar ao início">
+        <img src="assets/zetta-logo.webp" width="480" height="356" alt="" loading="lazy">
+        <span>Zetta</span>
+      </a>
+      <p class="slogan">Ideias que ganham forma. Impressão 3D e peças personalizadas.</p>
+    </div>
+    <nav aria-label="Rodapé">
+      <ul>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#sob-medida">Sob medida</a></li>
+        <li><a href="#como-funciona">Como funciona</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a data-wa="conversa" href="#contato">WhatsApp</a></li>
+      </ul>
+    </nav>
+    <p class="copy">© <span id="ano">2026</span> Zetta. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<div class="mbar" id="mbar">
+  <a class="btn btn-primary" data-wa="orcamento" href="#contato">Pedir orçamento pelo WhatsApp</a>
+</div>
+</body>
+</html>
